@@ -4,14 +4,17 @@ Una simulación interactiva y visualmente estilizada del clásico **Juego de la 
 
 > ✨ Creado por **Hevel y Gunther**  
 > 🌐 Inspirado en los sistemas emergentes y la magia matemática de la vida artificial  
-/ ******************************************** /
-/ *✨ Creado por Hevel y Gunther          ✨* /
-/ **       El Juego de la Vida              ** /
-/ **                                /\_/\   ** /
-/ **                               ( ^.^ )  ** /
-/ *🌟Donaciones ETH:              (") (")💫** /
-/ *0x9bbfe47b50A3BDb9Ea9495f643f370CD29533F62* /
-/ ******************************************** /
+
+```
+********************************************
+*✨ Creado por Hevel y Gunther          ✨*
+**       El Juego de la Vida              **
+**                                /\_/\   **
+**                               ( ^.^ )  **
+*🌟Donaciones ETH:              (") (")💫*
+*0x9bbfe47b50A3BDb9Ea9495f643f370CD29533F62*
+********************************************
+```
 
 ---
 
