@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Juego de la Vida</title>
+    <link rel="stylesheet" href="El juego de la vida.css">
+<!-- 
+  ********************************************
+  *✨ Creado por Hevel y Gunther          ✨*
+  *         "El Juego de la Vida"            *
+  *                                 /\_/\    *
+  *                                ( ^.^ )   *
+  *🌟Donaciones ETH:               (") (")💫*
+  *0x9bbfe47b50A3BDb9Ea9495f643f370CD29533F62*
+  ********************************************
+-->
+</head>
+<body>
+    <div class="container">
+        <h1>El Juego de la Vida</h1>
+        <div class="main">
+            <div class="brush-controls-container">
+                <div class="brush-controls">
+                    <div class="brush-control">
+                        <canvas id="dotCanvas" class="brush-canvas" width="66" height="66"></canvas>
+                        <button id="dotBrush" class="brush-button">Dot</button>
+                    </div>
+                    <div class="brush-control">
+                        <canvas id="walkerCanvas" class="brush-canvas" width="66" height="66"></canvas>
+                        <button id="walkerBrush" class="brush-button">Walker</button>
+                    </div>
+                    <div class="brush-control">
+                        <canvas id="boatCanvas" class="brush-canvas" width="66" height="66"></canvas>
+                        <button id="boatBrush" class="brush-button">Boat</button>
+                    </div>
+                    <div class="brush-control">
+                        <canvas id="shipCanvas" class="brush-canvas" width="66" height="66"></canvas>
+                        <button id="shipBrush" class="brush-button">Ship</button>
+                    </div>
+                    <div class="brush-control">
+                        <canvas id="bossCanvas" class="brush-canvas" width="66" height="66"></canvas>
+                        <button id="bossBrush" class="brush-button">Boss</button>
+                    </div>
+                    <div class="brush-control">
+                        <canvas id="novaCanvas" class="brush-canvas" width="66" height="66"></canvas>
+                        <button id="novaBrush" class="brush-button">Nova</button>
+                    </div>
+                </div>
+            </div>
+            <canvas id="gameCanvas"></canvas>
+        </div>
+        <div class="controls">
+            <button id="startButton">Iniciar</button>
+            <button id="stopButton">Detener</button>
+            <button id="resetButton">Reiniciar</button>
+        </div>
+        <button id="infoButton" class="info-button">Información<br>del<br>Juego</button>
+        <div id="popup" class="popup">
+            <h2>El Juego de la Vida de Conway</h2>
+            <p>Se trata de una simulación que consiste en una cuadrícula de celdas que pueden estar vivas o muertas. Las celdas evolucionan en función de reglas simples, creando patrones complejos con el tiempo llamados sistemas emergentes.</p>
+            <p>El Juego fué diseñado por el matemático John Horton Conway en 1970. </p>
+            <p>Las reglas son las siguientes:</p>
+            <ul>
+                <li>Una célula viva con menos de dos células vecinas vivas muere (Soledad).</li>
+                <li>Una célula viva con dos o tres células vecinas vivas sobrevive a la próxima generación.</li>
+                <li>Una célula viva con más de tres células vecinas vivas muere (Sobrepoblación).</li>
+                <li>Una célula muerta con exactamente tres células vecinas vivas se convierte en una célula viva (Reproducción).</li>
+            </ul>
+        </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <script src="El juego de la vida.js"></script>
+</body>
+</html>
